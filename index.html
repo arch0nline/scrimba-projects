@@ -1,24 +1,24 @@
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
-    </head>
-    <body>  
         <script src="index.js"></script>
-        <div class="main-content">                
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="top-input">
+                <h4> Metric/Imperial Unit Conversion </h4>
+                <h1> 
+                    <input type="text" class="textinput" id="input-el" name="inputfield" autofocus onchange="convertAll()">
+                </h1>
+            </div>
             
-            <h1><span class="title1"> Generate a </span> random password</h1>
-            
-            <p> Never use an insecure password again. </p>
-            
-            <button type="button" onclick="populatePasswords()"> Generate passwords </button>
-            <label for="passwordLength" style="color:white"> Password Length = </label>
-            <input type="number" id="passwordLength" min=6 max=18 value=8>
-            <hr>
-            <div class="password-frame">
-                <button type="button" id="outputBox1" class="pass-box"> ...</button>
-                <button type="button" id="outputBox2" class="pass-box"> ... </button>
-                <button type="button" id="outputBox3" class="pass-box"> ... </button>
-                <button type="button" id="outputBox4" class="pass-box"> ... </button>
+            <div class="bottom-result">    
+                <h5><b> Length(Meter/Feet)</b> </h5>
+                <h6> <span id="show-length"> 0  metres = 0 feet  | 0 feet = 0 metres</h6>            
+                <h5><b> Volume(Litres/Gallons) </b></h5>
+                <h6> <span id="show-volume"> 0  litres = 0 gallons  | 0 gallons = 0 litres</h6>
+                <h5> <b> Mass(Kilograms/Pounds)</b> </h5>
+                <h6> <span id="show-mass"> 0  kilograms = 0 pounds  | 0 pounds = 0 kilograms</h6>
             </div>
         </div>
     </body>
